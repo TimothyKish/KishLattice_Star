@@ -1,0 +1,14 @@
+{
+  "ligo_coherence": {
+    "domain": "ligo_coherence",
+    "n": 74,
+    "nonzero": 71,
+    "mean": 5.102383,
+    "std": 0.113244,
+    "min": 4.891771,
+    "max": 5.295257,
+    "lakes": [
+      "s3_ligo_coherence"
+    ]
+  }
+}

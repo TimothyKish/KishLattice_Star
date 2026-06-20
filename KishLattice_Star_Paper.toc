@@ -1,0 +1,59 @@
+\contentsline {chapter}{Preface: The Noise They Threw Away}{4}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}The Singularity Problem: When the Equation Meets the Void}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The Standard Picture and Its Failure}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}The Planck Scale as the Lattice Spacing}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}The 24-Cell: The Densest Lattice in Four Dimensions}{7}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Two Proposals: Planck Star vs.\ KishLattice Star}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Planck Star Hypothesis (Rovelli \& Vidotto, 2014)}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}The KishLattice Star (2026)}{9}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Fast Radio Bursts as Probes of Lattice Structure}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The Ghost Notes That Started the Framework}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}The FRB Friction Model: What We Already Know}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}The 24-Cell Coordination Structure and the $\alpha = 2/3$ Derivation}{12}{section.3.3}%
+\contentsline {section}{\numberline {3.4}FRB20121102A: The Primary Metronome}{12}{section.3.4}%
+\contentsline {chapter}{\numberline {4}The LIGO Ringdown: Reading the Terminus Bounce}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The Standard Ringdown Model}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}The Terminus Bounce Frequency}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}The Detectable Prediction}{15}{section.4.3}%
+\contentsline {chapter}{\numberline {5}The Convergence Test: One Terminus, Two Instruments}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}The Logic of Independent Convergence}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}The Most Dense Objects Known}{17}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Formal Predictions: The Pre-Registration Record}{19}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Proposed Lakes and Methodology}{24}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Lake Design: L\_ligo\_ringdown}{24}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Lake Design: L\_frb\_timing}{25}{section.7.2}%
+\contentsline {section}{\numberline {7.3}The Friction Model Re-Fit Protocol}{25}{section.7.3}%
+\contentsline {chapter}{\numberline {8}The Verdict We Are Seeking}{26}{chapter.8}%
+\contentsline {section}{\numberline {8.1}What the Data Will Tell Us}{26}{section.8.1}%
+\contentsline {section}{\numberline {8.2}What We Are Not Claiming}{27}{section.8.2}%
+\contentsline {chapter}{Epilogue: The Signal in the Noise}{28}{chapter*.3}%
+\contentsline {chapter}{Version 2 Update — June 14, 2026: First Star Probe Results}{29}{chapter*.4}%
+\contentsline {chapter}{The First Star Probe Run}{30}{chapter*.5}%
+\contentsline {chapter}{Version 2 Pre-Registered Predictions}{33}{chapter*.6}%
+\contentsline {chapter}{Version 3 Update — June 2026: The LIGO Probe and the Aurora Protocol}{36}{chapter*.7}%
+\contentsline {chapter}{The LIGO Probe: A Chronicle of Scientific Discipline}{37}{chapter*.8}%
+\contentsline {paragraph}{Challenge 1: Small n.}{37}{chapter*.8}%
+\contentsline {paragraph}{Challenge 2: The predicted frequency is in LIGO's noise band.}{37}{chapter*.8}%
+\contentsline {paragraph}{Challenge 3: Foreground contamination and event exclusions.}{37}{chapter*.8}%
+\contentsline {chapter}{The Cross-Spectral Coherence Instrument}{41}{chapter*.9}%
+\contentsline {chapter}{The Aurora Protocol: Collaborative Scientific Discovery}{45}{chapter*.10}%
+\contentsline {paragraph}{The Nyquist catch.}{46}{table.8.7}%
+\contentsline {paragraph}{The bin filter catch.}{46}{table.8.7}%
+\contentsline {paragraph}{The control experiment.}{46}{table.8.7}%
+\contentsline {chapter}{V4 Pre-Registration: Coherence Channel --- Filed Before Pipeline Execution}{48}{chapter*.11}%
+\contentsline {chapter}{\numberline {9}V5: The Coherence Run, the Halt, and the Third Detector}{50}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Where V4 Left Off}{50}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Step One: Running the Pre-Registered Instrument}{50}{section.9.2}%
+\contentsline {section}{\numberline {9.3}The Verdict: AMBIGUOUS / Sensitivity-Limited}{51}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Step Two: Why a Third Detector, and What It Can and Cannot Fix}{54}{section.9.4}%
+\contentsline {section}{\numberline {9.5}The Corrected Architecture: Two Lanes, Not One Gate}{57}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Reconciling the Event Count: 88 vs.\ 86}{57}{section.9.6}%
+\contentsline {section}{\numberline {9.7}What Comes Next}{58}{section.9.7}%
+\contentsline {chapter}{\numberline {10}V6: The Corrected Instrument, the Honest Null, and the Closing of the Star Paper}{59}{chapter.10}%
+\contentsline {section}{\numberline {10.1}What Was Found Between V5 and V6}{59}{section.10.1}%
+\contentsline {section}{\numberline {10.2}The Architectural Correction}{61}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Proving the Fix on Noise Before Trusting It on Signal}{61}{section.10.3}%
+\contentsline {section}{\numberline {10.4}The Real Result}{63}{section.10.4}%
+\contentsline {section}{\numberline {10.5}The Verdict: Falsification}{63}{section.10.5}%
+\contentsline {section}{\numberline {10.6}What This Closes, and What It Does Not}{64}{section.10.6}%
+\contentsline {chapter}{Bibliography}{71}{chapter*.12}%

@@ -1,0 +1,11 @@
+KishLattice Pipeline Run Receipt
+============================================================
+
+engine_version:  ERROR: Engine fingerprint requires 'C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\scalarize.py' but it does not exist.
+Slot: scalarize_py
+Ensure all six engine/config files are present before running.
+total_runtime:   0s
+completed_utc:   2026-06-14 21:08:54 UTC
+
+Stages:
+  [FAIL] scalarize    0s

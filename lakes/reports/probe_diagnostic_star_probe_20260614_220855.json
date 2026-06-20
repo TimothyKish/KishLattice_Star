@@ -1,0 +1,310 @@
+{
+  "probe_name": "star_probe",
+  "description": "KishLattice Star - Crystalline Terminus diagnostic probe",
+  "pre_registration_doi": "10.5281/zenodo.20370708",
+  "run_timestamp": "20260614_220855",
+  "completed_utc": "2026-06-14 22:08:56 UTC",
+  "engine_version": "7ec3f687e97dbc53157f487b8d3c8028c78cb29cd07bf67abd2b4a5260366c03d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db373477dbb7cfd9c0d829f7262a19a7ffe3ea8caf4329bd8303c740a920df932f4bb2",
+  "unified_master_md5": "45366427ee2bcbd181e6174d2a8e59b9",
+  "total_runtime": "1s",
+  "pipeline_stages": [
+    {
+      "name": "scalarize",
+      "success": true,
+      "elapsed": 0.10092687606811523,
+      "returncode": 0
+    },
+    {
+      "name": "unify",
+      "success": true,
+      "elapsed": 0.13260698318481445,
+      "returncode": 0
+    },
+    {
+      "name": "chaos",
+      "success": true,
+      "elapsed": 0.3643043041229248,
+      "returncode": 0
+    },
+    {
+      "name": "pinch",
+      "success": true,
+      "elapsed": 0.6291592121124268,
+      "returncode": 0
+    }
+  ],
+  "diagnostic": {
+    "verdict": "PARTIAL",
+    "verdict_message": "Some probe targets show signal. Mixed result. Review per-target status for next steps.",
+    "targets": [
+      {
+        "domain": "frb_structural",
+        "field": "dm",
+        "register_predicted": 21,
+        "register_predicted_scalar": 6.684508,
+        "register_secondary": 24,
+        "z_at_predicted": -0.4524,
+        "z_at_secondary": -0.6835,
+        "peak_register": 25,
+        "peak_z": 22.2698,
+        "peak_scalar": 7.957747,
+        "status": "UNEXPECTED_SIGNAL",
+        "message": "STRONG signal at unexpected register 25/pi (z=22.27). Predicted 21/pi shows z=-0.45. Signal is real but our scalarization assumption may need revision.",
+        "physical_interpretation": "Structural medium - IGM column density. Same register as nuclear binding energy and galactic velocity dispersion.",
+        "note": "If DM clusters at 21/pi, the intergalactic medium carries the structural geometry of the 24-cell lattice.",
+        "register_table": [
+          {
+            "register": 4,
+            "scalar": 1.27324,
+            "z_score": -6.795
+          },
+          {
+            "register": 5,
+            "scalar": 1.591549,
+            "z_score": 9.3975
+          },
+          {
+            "register": 6,
+            "scalar": 1.909859,
+            "z_score": -4.7588
+          },
+          {
+            "register": 7,
+            "scalar": 2.228169,
+            "z_score": -3.6671
+          },
+          {
+            "register": 8,
+            "scalar": 2.546479,
+            "z_score": -3.5024
+          },
+          {
+            "register": 9,
+            "scalar": 2.864789,
+            "z_score": -1.8717
+          },
+          {
+            "register": 10,
+            "scalar": 3.183099,
+            "z_score": 10.9828
+          },
+          {
+            "register": 11,
+            "scalar": 3.501409,
+            "z_score": -4.0129
+          },
+          {
+            "register": 12,
+            "scalar": 3.819719,
+            "z_score": -3.2692
+          },
+          {
+            "register": 13,
+            "scalar": 4.138029,
+            "z_score": -3.3361
+          },
+          {
+            "register": 14,
+            "scalar": 4.456338,
+            "z_score": -3.224
+          },
+          {
+            "register": 15,
+            "scalar": 4.774648,
+            "z_score": -5.7281
+          },
+          {
+            "register": 16,
+            "scalar": 5.092958,
+            "z_score": 3.2696
+          },
+          {
+            "register": 17,
+            "scalar": 5.411268,
+            "z_score": 2.9035
+          },
+          {
+            "register": 18,
+            "scalar": 5.729578,
+            "z_score": -3.3237
+          },
+          {
+            "register": 19,
+            "scalar": 6.047888,
+            "z_score": -5.5864
+          },
+          {
+            "register": 20,
+            "scalar": 6.366198,
+            "z_score": -4.5969
+          },
+          {
+            "register": 21,
+            "scalar": 6.684508,
+            "z_score": -0.4524
+          },
+          {
+            "register": 22,
+            "scalar": 7.002817,
+            "z_score": -3.0459
+          },
+          {
+            "register": 23,
+            "scalar": 7.321127,
+            "z_score": -3.7644
+          },
+          {
+            "register": 24,
+            "scalar": 7.639437,
+            "z_score": -0.6835
+          },
+          {
+            "register": 25,
+            "scalar": 7.957747,
+            "z_score": 22.2698
+          },
+          {
+            "register": 26,
+            "scalar": 8.276057,
+            "z_score": -3.9351
+          }
+        ]
+      },
+      {
+        "domain": "frb_kinematic",
+        "field": "delta_t",
+        "register_predicted": 16,
+        "register_predicted_scalar": 5.092958,
+        "register_secondary": 21,
+        "z_at_predicted": -2.6237,
+        "z_at_secondary": 4.2585,
+        "peak_register": 25,
+        "peak_z": 12.6631,
+        "peak_scalar": 7.957747,
+        "status": "UNEXPECTED_SIGNAL",
+        "message": "STRONG signal at unexpected register 25/pi (z=12.66). Predicted 16/pi shows z=-2.62. Signal is real but our scalarization assumption may need revision.",
+        "physical_interpretation": "Kinematic timing - bounce dynamics of neutron star fracture. Same register as stellar velocities, protein backbone, TTV deviations.",
+        "note": "If inter-burst timing clusters at 16/pi, FRB burst dynamics encode the kinematic primary of the 24-cell lattice.",
+        "register_table": [
+          {
+            "register": 4,
+            "scalar": 1.27324,
+            "z_score": -2.6398
+          },
+          {
+            "register": 5,
+            "scalar": 1.591549,
+            "z_score": -1.2554
+          },
+          {
+            "register": 6,
+            "scalar": 1.909859,
+            "z_score": -2.0281
+          },
+          {
+            "register": 7,
+            "scalar": 2.228169,
+            "z_score": -2.5614
+          },
+          {
+            "register": 8,
+            "scalar": 2.546479,
+            "z_score": -2.1194
+          },
+          {
+            "register": 9,
+            "scalar": 2.864789,
+            "z_score": -3.0269
+          },
+          {
+            "register": 10,
+            "scalar": 3.183099,
+            "z_score": -0.8618
+          },
+          {
+            "register": 11,
+            "scalar": 3.501409,
+            "z_score": -1.998
+          },
+          {
+            "register": 12,
+            "scalar": 3.819719,
+            "z_score": -0.0855
+          },
+          {
+            "register": 13,
+            "scalar": 4.138029,
+            "z_score": -1.372
+          },
+          {
+            "register": 14,
+            "scalar": 4.456338,
+            "z_score": -2.6268
+          },
+          {
+            "register": 15,
+            "scalar": 4.774648,
+            "z_score": -0.8712
+          },
+          {
+            "register": 16,
+            "scalar": 5.092958,
+            "z_score": -2.6237
+          },
+          {
+            "register": 17,
+            "scalar": 5.411268,
+            "z_score": 9.7307
+          },
+          {
+            "register": 18,
+            "scalar": 5.729578,
+            "z_score": -1.4634
+          },
+          {
+            "register": 19,
+            "scalar": 6.047888,
+            "z_score": -1.2426
+          },
+          {
+            "register": 20,
+            "scalar": 6.366198,
+            "z_score": -2.9897
+          },
+          {
+            "register": 21,
+            "scalar": 6.684508,
+            "z_score": 4.2585
+          },
+          {
+            "register": 22,
+            "scalar": 7.002817,
+            "z_score": -2.7433
+          },
+          {
+            "register": 23,
+            "scalar": 7.321127,
+            "z_score": -1.1689
+          },
+          {
+            "register": 24,
+            "scalar": 7.639437,
+            "z_score": -1.7325
+          },
+          {
+            "register": 25,
+            "scalar": 7.957747,
+            "z_score": 12.6631
+          },
+          {
+            "register": 26,
+            "scalar": 8.276057,
+            "z_score": -0.8155
+          }
+        ]
+      }
+    ],
+    "any_signal": true,
+    "all_confirmed": false
+  }
+}

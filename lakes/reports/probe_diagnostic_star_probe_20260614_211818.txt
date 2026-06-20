@@ -1,0 +1,36 @@
+======================================================================
+  KISHLATTICE STAR PROBE -- DIAGNOSTIC REPORT
+  Probe:            star_probe
+  Description:      KishLattice Star - Crystalline Terminus diagnostic probe
+  Pre-registration: 10.5281/zenodo.20370708
+  Run timestamp:    20260614_211818
+  Completed UTC:    2026-06-14 21:18:19 UTC
+  Total runtime:    1s
+  Engine version:   7ec3f687e97dbc53157f487b8d3c8028c78cb29cd07bf67abd2b4a5260366c03
+                    d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db3734
+                    77dbb7cfd9c0d829f7262a19a7ffe3eaef825f3a9e620d9d3ba1d052e688e76f
+  Unified master:   d41d8cd98f00b204e9800998ecf8427e
+======================================================================
+
+PIPELINE STAGES
+----------------------------------------
+  [OK]   scalarize    0s
+  [OK]   unify        0s
+  [OK]   chaos        0s
+  [FAIL] pinch        0s
+
+======================================================================
+  PROBE VERDICT: UNKNOWN
+  
+======================================================================
+
+TARGET RESULTS
+----------------------------------------------------------------------
+
+NOTE: A null result or wrong-register result is scientific information.
+      Wrong register + strong signal = scalarization assumption needs revision.
+      Null result = framework constrains the crystalline terminus model.
+      The data is the authority. Pre-registration timestamps our current understanding.
+
+  JSON report: C:\Users\timot\Downloads\Science\src\KishLattice Star\lakes\reports\probe_diagnostic_star_probe_20260614_211818.json
+======================================================================

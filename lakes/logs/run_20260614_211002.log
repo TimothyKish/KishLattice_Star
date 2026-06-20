@@ -1,0 +1,47 @@
+KishLattice Pipeline Run Log
+============================================================
+run_timestamp:   20260614_211002
+vol_root:        C:\Users\timot\Downloads\Science\src\KishLattice Star
+engine_version:  ERROR: Engine fingerprint requires 'C:\Users\timot\Downloads\Science\src\KishLattice Star\configs\scalarize.json' but it does not exist.
+Slot: scalarize_json
+Ensure all six engine/config files are present before running.
+stages:          scalarize, unify, chaos, pinch, figures
+started_utc:     2026-06-14 21:10:12 UTC
+============================================================
+
+
+============================================================
+[2026-06-14 21:10:12 UTC] STAGE: SCALARIZE
+Transform promoted lakes into scalar space
+============================================================
+[WARN] scalarize.json not found at C:\Users\timot\Downloads\Science\src\KishLattice Star\configs\scalarize.json
+Traceback (most recent call last):
+  File "C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\scalarize.py", line 183, in <module>
+    LAKES = load_enabled_lakes()
+  File "C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\scalarize.py", line 180, in load_enabled_lakes
+    cfg = json.load(open(CONFIG_DIR / "volumes.json", "r", encoding="utf-8"))
+                    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\timot\\Downloads\\Science\\src\\KishLattice Star\\configs\\volumes.json'
+
+[2026-06-14 21:10:12 UTC] STAGE FAILED: scalarize (exit code 1) after 0s
+
+============================================================
+[2026-06-14 21:10:12 UTC] PIPELINE HALTED -- scalarize failed.
+  Error: Exit code 1
+  Fix the issue and re-run from: python run_pipeline.py --from scalarize
+============================================================
+
+============================================================
+[2026-06-14 21:10:12 UTC] PIPELINE FAILED
+  Total runtime: 0s
+  Log file:      lakes\logs\run_20260614_211002.log
+
+  Stage summary:
+    [FAIL] scalarize    0s
+
+  Engine fingerprint: ERROR: Engine fingerprint requires 'C:\Users\timot\Downloads\Sci
+                      ence\src\KishLattice Star\configs\scalarize.json' but it does no
+                      t exist.
+Slot: scalarize_json
+Ensure all six engine/config files are present before running.
+============================================================

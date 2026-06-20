@@ -1,0 +1,21 @@
+KishLattice Star Probe Run Log
+============================================================
+probe_name:      star_probe
+run_timestamp:   20260614_210639
+vol_root:        C:\Users\timot\Downloads\Science\src\KishLattice Star
+engine_version:  ERROR: Engine fingerprint requires 'C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\scalarize.py' but it does not exist.
+Slot: scalarize_py
+Ensure all six engine/config files are present before running.
+stages:          scalarize, unify, chaos, pinch
+started_utc:     2026-06-14 21:06:39 UTC
+============================================================
+
+
+[2026-06-14 21:06:39 UTC] STAGE: SCALARIZE
+[2026-06-14 21:06:39 UTC] STAGE FAILED (exit code 1): scalarize in 0s
+
+============================================================
+[2026-06-14 21:06:39 UTC] PIPELINE HALTED -- scalarize failed.
+  Fix the issue and re-run:
+  python engine_lattice_probe1/run_probe.py --probe star_probe --from scalarize
+============================================================

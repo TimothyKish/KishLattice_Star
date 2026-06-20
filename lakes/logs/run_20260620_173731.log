@@ -1,0 +1,56 @@
+KishLattice Pipeline Run Log
+============================================================
+run_timestamp:   20260620_173731
+vol_root:        C:\Users\timot\Downloads\Science\src\KishLattice Star
+engine_version:  7ec3f687e97dbc53157f487b8d3c8028c78cb29cd07bf67abd2b4a5260366c03d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db3734357166e3dff34ccfa27065ff6a20e4de72c2e73bdedea5d667ea5ca9ef524b2b
+stages:          scalarize, unify, chaos, pinch, figures
+started_utc:     2026-06-20 17:37:41 UTC
+============================================================
+
+
+============================================================
+[2026-06-20 17:37:41 UTC] STAGE: SCALARIZE
+Transform promoted lakes into scalar space
+============================================================
+[scalarize.json] Loaded config for 4 domains.
+Traceback (most recent call last):
+  File "C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\scalarize.py", line 183, in <module>
+    LAKES = load_enabled_lakes()
+  File "C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\scalarize.py", line 180, in load_enabled_lakes
+    cfg = json.load(open(CONFIG_DIR / "volumes.json", "r", encoding="utf-8"))
+  File "C:\Users\timot\AppData\Local\Python\pythoncore-3.14-64\Lib\json\__init__.py", line 298, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\timot\AppData\Local\Python\pythoncore-3.14-64\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\timot\AppData\Local\Python\pythoncore-3.14-64\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\timot\AppData\Local\Python\pythoncore-3.14-64\Lib\json\decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 29 column 2 (char 1258)
+
+[2026-06-20 17:37:41 UTC] STAGE FAILED: scalarize (exit code 1) after 0s
+
+============================================================
+[2026-06-20 17:37:41 UTC] PIPELINE HALTED -- scalarize failed.
+  Error: Exit code 1
+  Fix the issue and re-run from: python run_pipeline.py --from scalarize
+============================================================
+
+============================================================
+[2026-06-20 17:37:41 UTC] PIPELINE FAILED
+  Total runtime: 0s
+  Log file:      lakes\logs\run_20260620_173731.log
+
+  Stage summary:
+    [FAIL] scalarize    0s
+
+  Engine fingerprint: 7ec3f687e97dbc53157f487b8d3c8028c78cb29cd07bf67abd2b4a5260366c03
+                      d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db3734
+                      357166e3dff34ccfa27065ff6a20e4de72c2e73bdedea5d667ea5ca9ef524b2b
+============================================================

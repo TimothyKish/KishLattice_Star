@@ -1,0 +1,179 @@
+KishLattice Pipeline Run Log
+============================================================
+run_timestamp:   20260620_174217
+vol_root:        C:\Users\timot\Downloads\Science\src\KishLattice Star
+engine_version:  7ec3f687e97dbc53157f487b8d3c8028c78cb29cd07bf67abd2b4a5260366c03d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db3734357166e3dff34ccfa27065ff6a20e4de963720d5cb9d3bcdb7f5eb22334c5465
+stages:          scalarize, unify, chaos, pinch, figures
+started_utc:     2026-06-20 17:42:27 UTC
+============================================================
+
+
+============================================================
+[2026-06-20 17:42:27 UTC] STAGE: SCALARIZE
+Transform promoted lakes into scalar space
+============================================================
+[scalarize.json] Loaded config for 4 domains.
+
+============================================================
+  [MONITORING TIP] Open a new terminal and run:
+  python engine/sidecar.py
+  to view the live byte-streaming progress dashboard.
+============================================================
+
+
+[2026-06-20 17:42:27 UTC] STAGE COMPLETE: scalarize in 0s
+
+============================================================
+[2026-06-20 17:42:27 UTC] STAGE: UNIFY
+Stream all scalarized lakes into unified master
+============================================================
+C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\unify.py:94: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  start_time = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')
+C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\unify.py:179: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  end_time = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')
+
+============================================================
+  [MONITORING TIP] Open a new terminal and run:
+  python engine/sidecar.py
+  to view the live unified streaming dashboard.
+============================================================
+
+Volumes: 3 total, 1 enabled, 2 disabled
+
+[2026-06-20 17:42:27 UTC] Pipeline run started.
+
+  [SKIP] s3_ligo_noise_control � scalarized file not found
+
+[2026-06-20 17:42:27 UTC] Run complete.
+  Total runtime:   0h 0m 0s
+  Total records:   0
+  Lakes processed: 1
+  Throughput:      0 records/sec (average)
+  Master checksum: d41d8cd98f00b204e9800998ecf8427e
+  Checksum saved:  C:\Users\timot\Downloads\Science\src\KishLattice Star\lakes\unified\unified_master.jsonl.md5
+
+Unified master written: C:\Users\timot\Downloads\Science\src\KishLattice Star\lakes\unified\unified_master.jsonl
+Sweep results written:  C:\Users\timot\Downloads\Science\src\KishLattice Star\lakes\unified\sweep_results.json
+Pinch table written:    C:\Users\timot\Downloads\Science\src\KishLattice Star\lakes\unified\pinch_table.json
+
+Domain summary:
+  Domain                          n    nonzero     mean range
+  -----------------------------------------------------------------
+
+[2026-06-20 17:42:27 UTC] STAGE COMPLETE: unify in 0s
+
+[2026-06-20 17:42:27 UTC] CHECKSUM: computing MD5 of unified_master.jsonl
+  Checksum:      d41d8cd98f00b204e9800998ecf8427e
+  Bytes:         0
+  Computed in:   0s
+  Written to:    lakes\unified\unified_master.jsonl.md5
+
+============================================================
+[2026-06-20 17:42:27 UTC] STAGE: CHAOS
+Build chaos null distributions per domain
+============================================================
+[harmonic_targets.json] Loaded 23 registers (N=4 to N=26), container=24, threshold=0.05
+
+============================================================
+  [MONITORING TIP] Open a new terminal and run:
+  python engine/sidecar.py
+  to view the live null generation dashboard.
+============================================================
+
+NOTE: This job builds null distributions for all domains.
+      Runtime: Dependent on lake sizes. Do not interrupt.
+
+k_geo = 16/pi = 5.0929581789
+Volume number: 11
+Registers (23): 4/pi=1.273240  5/pi=1.591549  6/pi=1.909859  7/pi=2.228169  8/pi=2.546479  9/pi=2.864789  10/pi=3.183099  11/pi=3.501409  12/pi=3.819719  13/pi=4.138029  14/pi=4.456338  15/pi=4.774648  16/pi=5.092958  17/pi=5.411268  18/pi=5.729578  19/pi=6.047888  20/pi=6.366198  21/pi=6.684508  22/pi=7.002817  23/pi=7.321127  24/pi=7.639437  25/pi=7.957747  26/pi=8.276057
+
+Loading unified master...
+
+Found 0 domain slots:
+
+Building null lakes...
+
+All null lakes written to: C:\Users\timot\Downloads\Science\src\KishLattice Star\lakes\synthetic
+
+Next steps:
+  1. python engine/build_pinch_table.py
+
+[2026-06-20 17:42:27 UTC] STAGE COMPLETE: chaos in 0s
+
+============================================================
+[2026-06-20 17:42:27 UTC] STAGE: PINCH
+Compute z-scores and cross-domain pinch table
+============================================================
+[harmonic_targets.json] Loaded 23 registers (N=4 to N=26), container=24, threshold=0.05
+
+============================================================
+  [MONITORING TIP] Open a new terminal and run:
+  python engine/sidecar.py
+  to view the live parallel crunching dashboard.
+============================================================
+
+Loading unified master: C:\Users\timot\Downloads\Science\src\KishLattice Star\lakes\unified\unified_master.jsonl
+  Loading records into memory. Please wait...
+
+  Finished loading 0 total records.
+  Compressing to 32-bit Numpy Arrays for Memory-Safe IPC...
+
+Building pinch table in PARALLEL mode...
+
+  Loading Chaos Nulls into memory...
+  Finished loading Chaos Nulls.
+  Loading Synthetic Nulls into memory...
+  Finished loading Synthetic Nulls.
+Total Combinations: 0 | Remaining: 0
+
+Saved: C:\Users\timot\Downloads\Science\src\KishLattice Star\lakes\unified\pinch_table_cross_domain.json
+
+===================================================================================================================
+                                              CROSS-DOMAIN PINCH TABLE                                             
+Moduli: 4/pi=1.2732  5/pi=1.5915  6/pi=1.9099  7/pi=2.2282  8/pi=2.5465  9/pi=2.8648  10/pi=3.1831  11/pi=3.5014  12/pi=3.8197  13/pi=4.1380  14/pi=4.4563  15/pi=4.7746  16/pi=5.0930  17/pi=5.4113  18/pi=5.7296  19/pi=6.0479  20/pi=6.3662  21/pi=6.6845  22/pi=7.0028  23/pi=7.3211  24/pi=7.6394  25/pi=7.9577  26/pi=8.2761
+                                  dist_lock (1=perfect) | Winner + best chaos_delta per pairing                                   
+===================================================================================================================
+Domain                  
+------------------------
+
+--- WINNER PER PAIRING ---
+
+--- PER-DOMAIN DUAL Z-SCORES (Chaos | Synthetic) ---
+  Domain                           4/pi       5/pi       6/pi       7/pi       8/pi       9/pi      10/pi      11/pi      12/pi      13/pi      14/pi      15/pi      16/pi      17/pi      18/pi      19/pi      20/pi      21/pi      22/pi      23/pi      24/pi      25/pi      26/pi   Best   Interpretation
+  -------------------------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------  ------  --------------------
+
+Traceback (most recent call last):
+  File "C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\build_pinch_table.py", line 603, in <module>
+    display_table(pinch_table, active)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\build_pinch_table.py", line 564, in display_table
+    print(f"  Z-score stage complete: {_fmt_eta(total_z_elapsed)} total  | avg {total_z_elapsed/total_z_tasks:.2f}s per domain  | {total_z_elapsed:.1f}s wall time")
+                                                                                ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+ZeroDivisionError: division by zero
+
+[2026-06-20 17:42:27 UTC] STAGE FAILED: pinch (exit code 1) after 0s
+
+============================================================
+[2026-06-20 17:42:27 UTC] PIPELINE HALTED -- pinch failed.
+  Error: Exit code 1
+  Fix the issue and re-run from: python run_pipeline.py --from pinch
+============================================================
+
+============================================================
+[2026-06-20 17:42:27 UTC] PIPELINE FAILED
+  Total runtime: 0s
+  Log file:      lakes\logs\run_20260620_174217.log
+
+  Stage summary:
+    [OK]   scalarize    0s
+    [OK]   unify        0s
+    [OK]   chaos        0s
+    [FAIL] pinch        0s
+
+  unified_master MD5: d41d8cd98f00b204e9800998ecf8427e
+  Checksum file:      lakes\unified\unified_master.jsonl.md5
+
+  Engine fingerprint: 7ec3f687e97dbc53157f487b8d3c8028c78cb29cd07bf67abd2b4a5260366c03
+                      d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db3734
+                      357166e3dff34ccfa27065ff6a20e4de963720d5cb9d3bcdb7f5eb22334c5465
+============================================================

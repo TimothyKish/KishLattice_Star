@@ -1,0 +1,60 @@
+======================================================================
+  KISHLATTICE STAR PROBE -- DIAGNOSTIC REPORT
+  Probe:            star_probe
+  Description:      KishLattice Star - Crystalline Terminus diagnostic probe
+  Pre-registration: 10.5281/zenodo.20370708
+  Run timestamp:    20260614_212931
+  Completed UTC:    2026-06-14 21:29:32 UTC
+  Total runtime:    1s
+  Engine version:   7ec3f687e97dbc53157f487b8d3c8028c78cb29cd07bf67abd2b4a5260366c03
+                    d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db3734
+                    77dbb7cfd9c0d829f7262a19a7ffe3ea8caf4329bd8303c740a920df932f4bb2
+  Unified master:   815b6af2e929a4d0985b406660e968c8
+======================================================================
+
+PIPELINE STAGES
+----------------------------------------
+  [OK]   scalarize    0s
+  [OK]   unify        0s
+  [OK]   chaos        0s
+  [OK]   pinch        0s
+
+======================================================================
+  PROBE VERDICT: NULL
+  No targets show signal above threshold. Null result constrains the crystalline terminus model. Consider alternative scalarization formulas.
+======================================================================
+
+TARGET RESULTS
+----------------------------------------------------------------------
+
+  Domain:      frb_structural
+  Field:       dm
+  Predicted:   N=21 (scalar=n/a)
+  Status:      NO_SCORES
+  z @ predict: n/a
+  Peak:        N=None (z=n/a, scalar=n/a)
+  Message:     z_scores_master.json entry exists but contains no register scores.
+  Physics:     Structural medium - IGM column density. Same register as nuclear binding energy and galactic velocity dispersion.
+
+
+  --------------------------------------------------------------------
+
+  Domain:      frb_kinematic
+  Field:       delta_t
+  Predicted:   N=16 (scalar=n/a)
+  Status:      NO_SCORES
+  z @ predict: n/a
+  Peak:        N=None (z=n/a, scalar=n/a)
+  Message:     z_scores_master.json entry exists but contains no register scores.
+  Physics:     Kinematic timing - bounce dynamics of neutron star fracture. Same register as stellar velocities, protein backbone, TTV deviations.
+
+
+  --------------------------------------------------------------------
+
+NOTE: A null result or wrong-register result is scientific information.
+      Wrong register + strong signal = scalarization assumption needs revision.
+      Null result = framework constrains the crystalline terminus model.
+      The data is the authority. Pre-registration timestamps our current understanding.
+
+  JSON report: C:\Users\timot\Downloads\Science\src\KishLattice Star\lakes\reports\probe_diagnostic_star_probe_20260614_212931.json
+======================================================================

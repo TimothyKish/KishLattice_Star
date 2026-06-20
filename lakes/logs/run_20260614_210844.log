@@ -1,0 +1,38 @@
+KishLattice Pipeline Run Log
+============================================================
+run_timestamp:   20260614_210844
+vol_root:        C:\Users\timot\Downloads\Science\src\KishLattice Star
+engine_version:  ERROR: Engine fingerprint requires 'C:\Users\timot\Downloads\Science\src\KishLattice Star\engine\scalarize.py' but it does not exist.
+Slot: scalarize_py
+Ensure all six engine/config files are present before running.
+stages:          scalarize, unify, chaos, pinch, figures
+started_utc:     2026-06-14 21:08:54 UTC
+============================================================
+
+
+============================================================
+[2026-06-14 21:08:54 UTC] STAGE: SCALARIZE
+Transform promoted lakes into scalar space
+============================================================
+  ERROR: Script not found: engine/scalarize.py
+
+============================================================
+[2026-06-14 21:08:54 UTC] PIPELINE HALTED -- scalarize failed.
+  Error: Script not found: engine/scalarize.py
+  Fix the issue and re-run from: python run_pipeline.py --from scalarize
+============================================================
+
+============================================================
+[2026-06-14 21:08:54 UTC] PIPELINE FAILED
+  Total runtime: 0s
+  Log file:      lakes\logs\run_20260614_210844.log
+
+  Stage summary:
+    [FAIL] scalarize    0s
+
+  Engine fingerprint: ERROR: Engine fingerprint requires 'C:\Users\timot\Downloads\Sci
+                      ence\src\KishLattice Star\engine\scalarize.py' but it does not e
+                      xist.
+Slot: scalarize_py
+Ensure all six engine/config files are present before running.
+============================================================

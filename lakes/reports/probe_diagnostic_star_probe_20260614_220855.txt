@@ -1,0 +1,114 @@
+======================================================================
+  KISHLATTICE STAR PROBE -- DIAGNOSTIC REPORT
+  Probe:            star_probe
+  Description:      KishLattice Star - Crystalline Terminus diagnostic probe
+  Pre-registration: 10.5281/zenodo.20370708
+  Run timestamp:    20260614_220855
+  Completed UTC:    2026-06-14 22:08:56 UTC
+  Total runtime:    1s
+  Engine version:   7ec3f687e97dbc53157f487b8d3c8028c78cb29cd07bf67abd2b4a5260366c03
+                    d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db3734
+                    77dbb7cfd9c0d829f7262a19a7ffe3ea8caf4329bd8303c740a920df932f4bb2
+  Unified master:   45366427ee2bcbd181e6174d2a8e59b9
+======================================================================
+
+PIPELINE STAGES
+----------------------------------------
+  [OK]   scalarize    0s
+  [OK]   unify        0s
+  [OK]   chaos        0s
+  [OK]   pinch        0s
+
+======================================================================
+  PROBE VERDICT: PARTIAL
+  Some probe targets show signal. Mixed result. Review per-target status for next steps.
+======================================================================
+
+TARGET RESULTS
+----------------------------------------------------------------------
+
+  Domain:      frb_structural
+  Field:       dm
+  Predicted:   N=21 (scalar=6.684508)
+  Secondary:   N=24
+  Status:      UNEXPECTED_SIGNAL
+  z @ predict: -0.4524
+  z @ second:  -0.6835
+  Peak:        N=25 (z=22.2698, scalar=7.957747)
+  Message:     STRONG signal at unexpected register 25/pi (z=22.27). Predicted 21/pi shows z=-0.45. Signal is real but our scalarization assumption may need revision.
+  Physics:     Structural medium - IGM column density. Same register as nuclear binding energy and galactic velocity dispersion.
+
+     N      scalar     z_score  
+  ----  ----------  ----------
+     4    1.273240     -6.7950
+     5    1.591549      9.3975
+     6    1.909859     -4.7588
+     7    2.228169     -3.6671
+     8    2.546479     -3.5024
+     9    2.864789     -1.8717
+    10    3.183099     10.9828
+    11    3.501409     -4.0129
+    12    3.819719     -3.2692
+    13    4.138029     -3.3361
+    14    4.456338     -3.2240
+    15    4.774648     -5.7281
+    16    5.092958      3.2696
+    17    5.411268      2.9035
+    18    5.729578     -3.3237
+    19    6.047888     -5.5864
+    20    6.366198     -4.5969
+    21    6.684508     -0.4524  <-- PREDICTED
+    22    7.002817     -3.0459
+    23    7.321127     -3.7644
+    24    7.639437     -0.6835  <-- SECONDARY
+    25    7.957747     22.2698  <-- PEAK
+    26    8.276057     -3.9351
+
+  --------------------------------------------------------------------
+
+  Domain:      frb_kinematic
+  Field:       delta_t
+  Predicted:   N=16 (scalar=5.092958)
+  Secondary:   N=21
+  Status:      UNEXPECTED_SIGNAL
+  z @ predict: -2.6237
+  z @ second:  4.2585
+  Peak:        N=25 (z=12.6631, scalar=7.957747)
+  Message:     STRONG signal at unexpected register 25/pi (z=12.66). Predicted 16/pi shows z=-2.62. Signal is real but our scalarization assumption may need revision.
+  Physics:     Kinematic timing - bounce dynamics of neutron star fracture. Same register as stellar velocities, protein backbone, TTV deviations.
+
+     N      scalar     z_score  
+  ----  ----------  ----------
+     4    1.273240     -2.6398
+     5    1.591549     -1.2554
+     6    1.909859     -2.0281
+     7    2.228169     -2.5614
+     8    2.546479     -2.1194
+     9    2.864789     -3.0269
+    10    3.183099     -0.8618
+    11    3.501409     -1.9980
+    12    3.819719     -0.0855
+    13    4.138029     -1.3720
+    14    4.456338     -2.6268
+    15    4.774648     -0.8712
+    16    5.092958     -2.6237  <-- PREDICTED
+    17    5.411268      9.7307
+    18    5.729578     -1.4634
+    19    6.047888     -1.2426
+    20    6.366198     -2.9897
+    21    6.684508      4.2585  <-- SECONDARY
+    22    7.002817     -2.7433
+    23    7.321127     -1.1689
+    24    7.639437     -1.7325
+    25    7.957747     12.6631  <-- PEAK
+    26    8.276057     -0.8155
+
+  --------------------------------------------------------------------
+
+NOTE: A null result or wrong-register result is scientific information.
+      Wrong register + strong signal = scalarization assumption needs revision.
+      Null result = framework constrains the crystalline terminus model.
+      The data is the authority. Pre-registration timestamps our current understanding.
+
+  JSON report: C:\Users\timot\Downloads\Science\src\KishLattice Star\lakes\reports\probe_diagnostic_star_probe_20260614_220855.json
+======================================================================

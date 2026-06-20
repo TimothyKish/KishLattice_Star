@@ -1,0 +1,34 @@
+{
+  "domains": {
+    "frb_structural": {
+      "field": "dm",
+      "formula_type": "log_standard",
+      "natural_unit": 1.0,
+      "unit_label": "pc/cm3",
+      "family_prediction": "structural",
+      "register_prediction": 21,
+      "note": "Dispersion Measure: total observed DM, no foreground subtraction. Raw field from CHIME/FRB Catalog 1. DM < 10 excluded at promotion (Milky Way foreground). Predicted structural register 21/pi."
+    },
+    "frb_kinematic": {
+      "field": "delta_t",
+      "formula_type": "log_standard",
+      "natural_unit": 1.0,
+      "unit_label": "s",
+      "family_prediction": "kinematic",
+      "register_prediction": 16,
+      "note": "Inter-burst arrival time in seconds. Repeaters only, within activity windows. Predicted kinematic primary 16/pi. Pre-registration DOI: 10.5281/zenodo.20370708."
+    },
+	"ligo_coherence": {
+      "field": "f_peak_coherence_hz",
+      "formula": "log_standard",
+      "register_prediction": 16,
+	  "note": "ligo_coherence"
+	},
+	"ligo_coherence_NOISE_CONTROL": {
+      "field": "f_peak_coherence_hz",
+      "formula": "log_standard",
+      "register_prediction": 16,
+	  "note": "ligo_coherence_NOISE_CONTROL"
+	}
+  }
+}

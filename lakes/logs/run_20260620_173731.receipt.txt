@@ -1,0 +1,9 @@
+KishLattice Pipeline Run Receipt
+============================================================
+
+engine_version:  7ec3f687e97dbc53157f487b8d3c8028c78cb29cd07bf67abd2b4a5260366c03d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db3734357166e3dff34ccfa27065ff6a20e4de72c2e73bdedea5d667ea5ca9ef524b2b
+total_runtime:   0s
+completed_utc:   2026-06-20 17:37:41 UTC
+
+Stages:
+  [FAIL] scalarize    0s

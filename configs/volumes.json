@@ -1,0 +1,39 @@
+{
+  "__note__": "Star Probe Vol 12 - KishLattice Star (Crystalline Terminus). Pre-registration DOI: 10.5281/zenodo.20370708. Lake keys must match the filename before _promoted.jsonl suffix in lakes/inputs_promoted/. Convention: l<N>_<domain>_promoted.jsonl",
+  "volumes": {
+    "l3_frb_structural": {
+      "enabled": false,
+      "domain": "frb_structural",
+      "lake_id": "l3_frb_structural",
+      "probe": "star_probe",
+      "description": "CHIME/FRB Catalog 1 - Dispersion Measure (structural medium test)",
+      "promoted_file": "l3_frb_structural_promoted.jsonl"
+    },
+    "l4_frb_kinematic": {
+      "enabled": false,
+      "domain": "frb_kinematic",
+      "lake_id": "l4_frb_kinematic",
+      "probe": "star_probe",
+      "description": "CHIME/FRB Catalog 1 - Inter-burst arrival times (kinematic timing test)",
+      "promoted_file": "l4_frb_kinematic_promoted.jsonl"
+    },
+    "s3_ligo_noise_control": {
+      "path": "lakes/inputs_promoted/s3_ligo_noise_control_promoted.jsonl",
+      "enabled": false,
+      "domain": "ligo_coherence_NOISE_CONTROL",
+      "scale_rank": 3,
+      "scalar": "log(f_peak + 1) / log(k_geo) -- pure noise control",
+      "source": "LIGO GWTC-3 Pre-Merger Static Vacuum",
+      "audit": "v6_look_elsewhere_control"
+    },
+    "s3_ligo_coherence": {
+      "path": "lakes/inputs_promoted/s3_ligo_coherence_promoted.jsonl",
+      "enabled": true,
+      "domain": "ligo_coherence",
+      "scale_rank": 3,
+      "scalar": "log(f_peak + 1) / log(k_geo)",
+      "source": "LIGO GWTC-3 Post-Merger Ringdown",
+      "audit": "v6_ungated_primary"
+    }
+  }
+}

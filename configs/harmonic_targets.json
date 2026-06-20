@@ -1,0 +1,37 @@
+{
+  "registers": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26],
+  "container": 24,
+  "lock_threshold": 0.05,
+  "_note": "registers: full N/pi sweep family used by Vol 11 1D engine. container: 24-cell vertex count - do not change without engine redesign. lock_threshold: modular resonance tolerance band +/- around each integer node. probes: named probe target blocks for Star Probe and future toolbelt instruments. The sweep engine ignores the probes block. The probe engine reads only its named block.",
+  "probes": {
+    "star_probe": {
+      "description": "KishLattice Star - Crystalline Terminus diagnostic probe",
+      "pre_registration_doi": "10.5281/zenodo.20370708",
+      "volume": 12,
+      "targets": [
+        {
+          "lake_id": "frb_structural",
+          "domain": "frb_structural",
+          "register_prediction": 21,
+          "register_secondary": 24,
+          "formula_type": "log_standard",
+          "field": "dm",
+          "unit": "pc/cm3",
+          "physical_interpretation": "Structural medium - IGM column density. Same register as nuclear binding energy and galactic velocity dispersion.",
+          "note": "If DM clusters at 21/pi, the intergalactic medium carries the structural geometry of the 24-cell lattice."
+        },
+        {
+          "lake_id": "frb_kinematic",
+          "domain": "frb_kinematic",
+          "register_prediction": 16,
+          "register_secondary": 21,
+          "formula_type": "log_standard",
+          "field": "delta_t",
+          "unit": "s",
+          "physical_interpretation": "Kinematic timing - bounce dynamics of neutron star fracture. Same register as stellar velocities, protein backbone, TTV deviations.",
+          "note": "If inter-burst timing clusters at 16/pi, FRB burst dynamics encode the kinematic primary of the 24-cell lattice."
+        }
+      ]
+    }
+  }
+}

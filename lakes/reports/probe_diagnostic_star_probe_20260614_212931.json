@@ -1,0 +1,60 @@
+{
+  "probe_name": "star_probe",
+  "description": "KishLattice Star - Crystalline Terminus diagnostic probe",
+  "pre_registration_doi": "10.5281/zenodo.20370708",
+  "run_timestamp": "20260614_212931",
+  "completed_utc": "2026-06-14 21:29:32 UTC",
+  "engine_version": "7ec3f687e97dbc53157f487b8d3c8028c78cb29cd07bf67abd2b4a5260366c03d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db373477dbb7cfd9c0d829f7262a19a7ffe3ea8caf4329bd8303c740a920df932f4bb2",
+  "unified_master_md5": "815b6af2e929a4d0985b406660e968c8",
+  "total_runtime": "1s",
+  "pipeline_stages": [
+    {
+      "name": "scalarize",
+      "success": true,
+      "elapsed": 0.10157513618469238,
+      "returncode": 0
+    },
+    {
+      "name": "unify",
+      "success": true,
+      "elapsed": 0.13042759895324707,
+      "returncode": 0
+    },
+    {
+      "name": "chaos",
+      "success": true,
+      "elapsed": 0.3773689270019531,
+      "returncode": 0
+    },
+    {
+      "name": "pinch",
+      "success": true,
+      "elapsed": 0.6575338840484619,
+      "returncode": 0
+    }
+  ],
+  "diagnostic": {
+    "verdict": "NULL",
+    "verdict_message": "No targets show signal above threshold. Null result constrains the crystalline terminus model. Consider alternative scalarization formulas.",
+    "targets": [
+      {
+        "domain": "frb_structural",
+        "field": "dm",
+        "register_predicted": 21,
+        "status": "NO_SCORES",
+        "message": "z_scores_master.json entry exists but contains no register scores.",
+        "physical_interpretation": "Structural medium - IGM column density. Same register as nuclear binding energy and galactic velocity dispersion."
+      },
+      {
+        "domain": "frb_kinematic",
+        "field": "delta_t",
+        "register_predicted": 16,
+        "status": "NO_SCORES",
+        "message": "z_scores_master.json entry exists but contains no register scores.",
+        "physical_interpretation": "Kinematic timing - bounce dynamics of neutron star fracture. Same register as stellar velocities, protein backbone, TTV deviations."
+      }
+    ],
+    "any_signal": false,
+    "all_confirmed": false
+  }
+}
